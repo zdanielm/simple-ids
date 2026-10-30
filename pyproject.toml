@@ -1,0 +1,22 @@
+[project]
+name = "simple-ids"
+version = "0.1.0"
+description = "A simple intrusion detection system (IDS) written in Python."
+readme = "README.md"
+authors = [
+    { name = "Daniel Zombori", email = "99269230+zdanielm@users.noreply.github.com" }
+]
+requires-python = ">=3.13"
+dependencies = [
+    "numpy>=2.5.4",
+    "python-nmap>=0.7.1",
+    "scapy>=2.8.0",
+    "scikit-learn>=1.9.1",
+]
+
+[project.scripts]
+simple-ids = "main:main"
+
+[build-system]
+requires = ["uv_build>=0.12.19,<0.13.0"]
+build-backend = "uv_build"
